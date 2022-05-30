@@ -1,10 +1,20 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
+			"path": "pages/home/index",
+			"style": {}
+		},
+		{
+			"path": "pages/category/index",
+			"style": {}
+		},
+		{
+			"path": "pages/cart/index",
+			"style": {}
+		},
+		{
+			"path": "pages/my/index",
+			"style": {}
 		}
 	],
 	"globalStyle": {
@@ -12,5 +22,59 @@
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"iconfontSrc": "static/font/iconfont.woff",
+		"color": "#333333",
+		"selectedColor": "#64CD83",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"height": "55px",
+		"list": [
+			{
+				"pagePath": "pages/home/index",
+				"text": "首页",
+				"iconfont": {
+					"text": "\uebe8",
+					"selectedText": "\uebe8",
+					"font-size": "24px",
+					"color": "#4D4D4D",
+					"selectedColor": "#E94A40"
+				}
+			},
+			{
+				"pagePath": "pages/category/index",
+				"text": "分类",
+				"iconfont": {
+					"text": "\uebe8",
+					"selectedText": "\uebe8",
+					"font-size": "24px",
+					"color": "#4D4D4D",
+					"selectedColor": "#E94A40"
+				}
+			},
+			{
+				"pagePath": "pages/cart/index",
+				"text": "购物车",
+				"iconfont": {
+					"text": "\uebe8",
+					"selectedText": "\uebe8",
+					"font-size": "24px",
+					"color": "#4D4D4D",
+					"selectedColor": "#E94A40"
+				}
+			},
+			{
+				"pagePath": "pages/my/index",
+				"text": "我的",
+				"iconfont": {
+					"text": "\uebe8",
+					"selectedText": "\uebe8",
+					"font-size": "24px",
+					"color": "#4D4D4D",
+					"selectedColor": "#E94A40"
+				}
+			}
+		]
 	}
 }
