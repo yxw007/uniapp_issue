@@ -1,21 +1,21 @@
 <template>
-	<view>
-		test page
-		<Sub>
-			<template #first="{ item }">
-				<view class="item"> xxx {{ item.name }} </view>
-			</template>
-		</Sub>
-	</view>
+  <view>
+    test page
+    <ChildComp @xxx="onClickXXX"></ChildComp>
+  </view>
 </template>
 
 <script>
-import Sub from "./sub.vue";
-
+import ChildComp from "./childComp.vue";
 export default {
-	components: {
-		Sub,
-	},
-	onLoad() {},
+  components: {
+    ChildComp,
+  },
+  onLoad() {},
+  methods: {
+    onClickXXX() {
+      console.log("onClickXXX");
+    },
+  },
 };
 </script>
