@@ -1,21 +1,11 @@
 <template>
-	<view>
-		test page
-		<Sub>
-			<template #first="{ item }">
-				<view class="item"> xxx {{ item.name }} </view>
-			</template>
-		</Sub>
-	</view>
+  <view> test page </view>
 </template>
 
-<script>
-import Sub from "./sub.vue";
+<script setup name="index">
+import { onMounted } from "vue";
 
-export default {
-	components: {
-		Sub,
-	},
-	onLoad() {},
-};
+onMounted(() => {
+  console.log("onMounted");
+});
 </script>

@@ -1,13 +1,13 @@
 <template>
-	<Sub>
-		<template #first="{ item }">
-			<view class="item"> xxx {{ item.name }} </view>
-		</template>
-	</Sub>
+  <Sub>
+    <template #first="{ item }">
+      <view class="item"> xxx {{ item.name }} </view>
+    </template>
+  </Sub>
 </template>
 
-<script>
-export default {
+<script setup>
+/* export default {
 	onLaunch: function() {
 		console.log("App Launch");
 	},
@@ -17,5 +17,11 @@ export default {
 	onHide: function() {
 		console.log("App Hide");
 	},
-};
+}; */
+
+import { onMounted } from "vue";
+
+onMounted(() => {
+  console.log("onMounted:APP");
+});
 </script>
