@@ -1,11 +1,21 @@
 <template>
-  <view> test page </view>
+  <view>
+    test page
+    <ChildComp @xxx="onClickXXX"></ChildComp>
+  </view>
 </template>
 
-<script setup name="index">
-import { onMounted } from "vue";
-
-onMounted(() => {
-  console.log("onMounted");
-});
+<script>
+import ChildComp from "./childComp.vue";
+export default {
+  components: {
+    ChildComp,
+  },
+  onLoad() {},
+  methods: {
+    onClickXXX() {
+      console.log("onClickXXX");
+    },
+  },
+};
 </script>
