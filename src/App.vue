@@ -1,10 +1,4 @@
-<template>
-  <Sub>
-    <template #first="{ item }">
-      <view class="item"> xxx {{ item.name }} </view>
-    </template>
-  </Sub>
-</template>
+<template> </template>
 
 <script setup>
 /* export default {

@@ -54,6 +54,7 @@
     "@dcloudio/uni-cli-shared": "^3.0.0-alpha-3030820220114008",
     "@dcloudio/vite-plugin-uni": "^3.0.0-alpha-3030820220114008",
     "autoprefixer": "^10.4.2",
+    "sass": "^1.54.0",
     "vite": "^2.7.13"
   }
 }
