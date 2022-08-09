@@ -56,10 +56,11 @@ const { data } = toRefs(props);
       position: absolute;
       left: 0;
       right: 0;
-      image {
+
+      /* image {
         width: 100%;
         height: 100%;
-      }
+      } */
     }
 
     .left__discount {
@@ -70,9 +71,10 @@ const { data } = toRefs(props);
       padding-top: 32rpx;
       padding-bottom: 19rpx;
       font-weight: bold;
-      text {
+
+      /* text {
         font-size: 12rpx;
-      }
+      } */
     }
 
     .left__minconsume {

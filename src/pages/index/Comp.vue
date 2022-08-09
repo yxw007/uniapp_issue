@@ -66,9 +66,9 @@ const emit = defineEmits(["close", "confirm"]);
     color: $text-grey-color;
     flex-grow: 1;
 
-    text {
+    /*  text {
       padding-right: 8rpx;
-    }
+    } */
   }
 
   .top__close {
